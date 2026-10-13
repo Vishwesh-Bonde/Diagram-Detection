@@ -1,0 +1,122 @@
+# =========================================================================
+# AI-Based Diagram Detection - .gitignore
+# =========================================================================
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Private keys
+*.pem
+*.key
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+temp/
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter artifacts
+.ipynb_checkpoints/
+
+# Model caches and downloaded checkpoints
+.paddlex/
+.paddleocr/
+models/
+checkpoints/
+*.pdparams
+*.pdmodel
+*.pdiparams
+*.onnx
+*.engine
+
+# Generated inference outputs
+outputs/
+runs/
+diagram_detection_result.png
+output_image.png
+debug_output/
+
+# Local datasets and large archives
+datasets/
+data/raw/
+*.zip
+*.7z
+*.rar
+
+# =========================================================================
+# Local PaddleOCR source checkout (NOT part of this project)
+# =========================================================================
+# A full PaddleOCR source checkout lives alongside this project's files. It is
+# NOT used by the application: PaddleOCR is installed from PyPI (see
+# requirements.txt). These paths keep the repository limited to this project.
+#
+# NOTE: if you later add your own GitHub Actions workflows, your own docs/
+# folder, or your own LICENSE, remove the matching line below so Git can track
+# them.
+.github/
+api_sdk/
+applications/
+benchmark/
+configs/
+deploy/
+doc/
+docs/
+langchain-paddleocr/
+mcp_server/
+overrides/
+paddleocr/
+paddleocr-js/
+ppocr/
+ppstructure/
+readme/
+skills/
+tests/
+test_tipc/
+tools/
+.clang_format.hook
+.lycheeignore
+.pre-commit-config.yaml
+.style.yapf
+awesome_projects.md
+CNAME
+MANIFEST.in
+mkdocs-ci.yml
+mkdocs.yml
+pyproject.toml
+RELEASING.md
+RELEASING_cn.md
+setup.py
+train.sh
+TEST_REPORT.md
+
+# PaddleOCR's Apache-2.0 LICENSE belongs to the excluded checkout above.
+# Remove this line once you add your own project's LICENSE file.
+/LICENSE

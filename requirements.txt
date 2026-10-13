@@ -1,0 +1,13 @@
+# Runtime dependencies for the AI-Based Diagram Detection app.
+# Verified on Windows 10/11 with Python 3.12.10.
+
+# PaddleOCR layout detection (PP-DocLayout-L).
+paddlepaddle==3.2.2
+paddleocr==3.7.0
+paddlex==3.7.2
+
+# Streamlit UI.
+streamlit==1.65.0
+
+# Image loading and annotation.
+pillow==12.3.0
